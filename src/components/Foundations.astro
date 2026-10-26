@@ -24,6 +24,25 @@ const foundations = await getCollection("foundations");
   </ul>
 </section>
 
+<script>
+  // Hidden digit: opening every foundation reveals the first digit in the console
+  const cards = document.querySelectorAll("#foundations details");
+  let revealed = false;
+
+  cards.forEach((card) =>
+    card.addEventListener("toggle", () => {
+      const allOpen = [...cards].every((c) => (c as HTMLDetailsElement).open);
+      if (allOpen && !revealed) {
+        revealed = true;
+        console.log(
+          "%cAll foundations laid! The first digit of the code is 1",
+          "font-size: 1.5em; font-weight: bold;",
+        );
+      }
+    }),
+  );
+</script>
+
 <style>
   h2 {
     white-space: nowrap;
