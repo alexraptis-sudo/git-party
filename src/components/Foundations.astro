@@ -1,0 +1,35 @@
+---
+import { getCollection } from "astro:content";
+import FoundationsCard from "./FoundationsCard.astro";
+
+const foundations = await getCollection("foundations");
+---
+
+<section class="container" id="foundations">
+  <header>
+    <h2><span>Our foundations</span></h2>
+    <p>
+      These foundations create an environment that encourages innovation,
+      creativity, and personal growth.
+    </p>
+  </header>
+  <ul>
+    {
+      foundations.map((foundation) => (
+        <li>
+          <FoundationsCard foundation={foundation} />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  h2 {
+    white-space: nowrap;
+  }
+
+  ul {
+    counter-reset: counter;
+  }
+</style>

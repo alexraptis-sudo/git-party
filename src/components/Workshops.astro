@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import WorkshopCard from "./WorkshopCard.astro";
+
+const workshops = await getCollection("workshops");
+
+/* check WorkshopCard.astro to get an idea of how to use these themes */
+const themes = ["grey", "green", "black"];
+---
+
+<section class="container" id="workshops">
+  <header>
+    <h2><span>Workshops</span></h2>
+    <p>
+      These workshops offer hands-on introductions to creative technologies,
+      empowering artists, designers, and musicians to explore digital tools as
+      expressive, interactive mediums.
+    </p>
+  </header>
+  <ul>
+    {
+      workshops.map((workshop, i) => (
+        <li>
+          <WorkshopCard
+            id={workshop.id}
+            title={workshop.data.title}
+            image={workshop.data.image}
+            theme={themes[i % themes.length]}
+          />
+        </li>
+      ))
+    }
+  </ul>
+</section>
+
+<style>
+  ul {
+    display: flex;
+    flex-flow: column;
+    gap: var(--sp-m);
+  }
+</style>
