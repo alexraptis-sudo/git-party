@@ -1,0 +1,21 @@
+---
+import Base from "../layouts/Base.astro";
+import Code from "../components/Code.astro";
+---
+
+<Base title="Code">
+  <div class="container">
+    <h2><span>Crack the code</span></h2>
+    <p>
+      Four digits are hidden across this website. Found them all? Enter the
+      code below.
+    </p>
+    <Code />
+  </div>
+</Base>
+
+<style>
+  p {
+    margin-bottom: var(--sp-l);
+  }
+</style>
