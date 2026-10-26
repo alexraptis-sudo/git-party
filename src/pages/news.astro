@@ -1,9 +1,15 @@
 ---
 import { getCollection } from "astro:content";
+import { getCollection, render } from "astro:content";
 import Base from "../layouts/Base.astro";
 
 const news = (await getCollection("news")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+
+// render() turns the markdown body into a <Content /> component
+const items = await Promise.all(
+  news.map(async (item) => ({ item, Content: (await render(item)).Content })),
 );
 ---
 
@@ -14,6 +20,7 @@ const news = (await getCollection("news")).sort(
     <ul>
       {
         news.map((item) => (
+        items.map(({ item, Content }) => (
           <li>
             <article>
               <h3>{item.data.title}</h3>
@@ -21,6 +28,11 @@ const news = (await getCollection("news")).sort(
                 {item.data.date.toDateString()}
               </time>
               <div class="md">##CONTENT##</div>
+                {item.data.date.toLocaleDateString("en-GB", { dateStyle: "long" })}
+              </time>
+              <div class="md">
+                <Content />
+              </div>
             </article>
           </li>
         ))
