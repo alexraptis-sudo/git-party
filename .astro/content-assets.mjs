@@ -1,0 +1,13 @@
+
+import __ASTRO_IMAGE_IMPORT_0 from "./img/casey.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fcasey.md";
+import __ASTRO_IMAGE_IMPORT_1 from "./img/draw.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F01-penplotter.md";
+import __ASTRO_IMAGE_IMPORT_2 from "./img/kristin.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fkristin.md";
+import __ASTRO_IMAGE_IMPORT_3 from "./img/music.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F03-maxmsp.md";
+import __ASTRO_IMAGE_IMPORT_4 from "./img/neal.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fneal.md";
+import __ASTRO_IMAGE_IMPORT_5 from "./img/p5.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F02-p5js.md";
+import __ASTRO_IMAGE_IMPORT_6 from "img/art.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Ffusion.md";
+import __ASTRO_IMAGE_IMPORT_7 from "img/collaboration.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Fcollaboration.md";
+import __ASTRO_IMAGE_IMPORT_8 from "img/experiment.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Fexperiment.md";
+import __ASTRO_IMAGE_IMPORT_9 from "img/learning.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Flearning.md";
+export default new Map([["./img/casey.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fcasey.md", __ASTRO_IMAGE_IMPORT_0], ["./img/draw.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F01-penplotter.md", __ASTRO_IMAGE_IMPORT_1], ["./img/kristin.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fkristin.md", __ASTRO_IMAGE_IMPORT_2], ["./img/music.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F03-maxmsp.md", __ASTRO_IMAGE_IMPORT_3], ["./img/neal.jpeg?astroContentImageFlag=&importer=src%2Fcontent%2Fteam%2Fneal.md", __ASTRO_IMAGE_IMPORT_4], ["./img/p5.png?astroContentImageFlag=&importer=src%2Fcontent%2Fworkshops%2F02-p5js.md", __ASTRO_IMAGE_IMPORT_5], ["img/art.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Ffusion.md", __ASTRO_IMAGE_IMPORT_6], ["img/collaboration.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Fcollaboration.md", __ASTRO_IMAGE_IMPORT_7], ["img/experiment.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Fexperiment.md", __ASTRO_IMAGE_IMPORT_8], ["img/learning.png?astroContentImageFlag=&importer=src%2Fcontent%2Ffoundations%2Flearning.md", __ASTRO_IMAGE_IMPORT_9]]);
+		
