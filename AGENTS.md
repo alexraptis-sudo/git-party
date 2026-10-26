@@ -38,4 +38,4 @@ Starter files contain `##WHAT-SHOULD-BE-HERE##` placeholders (e.g. in `src/pages
 - Per the challenge instructions, an `AGENTS.md` (sections: Project, Stack & constraints) is expected in the repo root.
 - Deployment target is GitHub Pages via the Astro GitHub Actions workflow (not yet added).
 
-Redo
+Redoo
